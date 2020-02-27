@@ -1,0 +1,424 @@
+/* Giving the entire webpage a font size of 15, and line hieghts of 1.5, and a font style of arial. Font tag helps
+decrease amount of other tags used font-family, font-size, and line hieght are all being called in this tag. Dont want
+any padding or margins making the background of the webpage a color of white */
+body {
+  font: 15px/1.5 Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+/* Gloabal */
+/* Calling class container which targets most DIV elements. Makes them responsive using %. Puts all elements in the middle
+of the page and anything that is outside of the DIVs are hidden */
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* targeting all unordered lists to get rid of their default margin and padding */
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* targeting all buttons that have a class of button_1. setting the height of the button to 38. giving it a clear background.
+giving it a border of 4px and making the style solid. making the font slightly bolder and transforming it to be uppercase.
+specifying the what your mouse looks like when you hover over it. Giving the font a size of 16 and setting a relative parent position for the absolute on the border */
+.button_1 {
+  height: 38px;
+  background: none;
+  border: 4px solid;
+  color: #2b0d0d;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 16px;
+  position: relative;
+}
+
+/* making blocks appear before and after the button content. Content '' gives a property, ..., giving the content a width
+of 14 and a height of 4 to make it a rectangle and the same background color as the newsletter so can be transparent 
+Skewing the element on the x axis by 50 degrees. and giving it a transition property of 0.4s and making sure its the same speed
+by making it linear*/
+.button_1::before,
+.button_1::after {
+  content: '';
+  position: absolute;
+  width: 14px;
+  height: 4px;
+  background: #7FB069;
+  transform: skewX(50deg);
+  transition: 0.4s linear;
+}
+
+/* making the left rectangles position on the top border by giving it top -4px and resting it
+slightly to the left*/
+.button_1::before {
+  top: -4px;
+  left: 10%;
+}
+
+/* making the right rectangles position on the bottom of the border with bottom -4px and resting it slightly towards the right */
+.button_1::after {
+  bottom: -4px;
+  right: 10%;
+}
+
+/* making the left rectangle move 80% on hover  */
+.button_1:hover::before {
+  left: 80%;
+}
+
+/* making the right rectangle move 80% on hover */
+.button_1:hover::after {
+  right: 80%;
+}
+
+.dark {
+  padding: 15px;
+  background: #35424a;
+  color: #ffffff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* Header */
+/* Calling the header element. Setting background color to green because of irelands flag. setting text to a white color.
+adding a padding on the top of 30px. Making the minimum hieght of the header 70px no matter what size the browser is.
+adding a bottom border just to help section off from Showcase using a orange color for irelands flag added 3px for
+width and made style solid*/
+header {
+  background: #7FB069;
+  color: #FFAA5A;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: #FFAA5A 3px solid;
+}
+
+/* Grabbing all links inside of header. Making text white. Removing underline from links. Making all links
+Uppercase. Giving links a font size of 16px */
+header a {
+  color: #2b0d0d;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+/* targeting the headers li and giving the padding of 0 top 20 right 0 bottom and 20 left. */
+header li {
+  display: inline;
+  padding: 0 20px 0 20px;
+}
+
+/* calling the branding id inside the header to make it float to the left of the list elements */
+header #branding {
+  float: left;
+}
+
+/* Taking out the margin in the h1 element nested in the branding id */
+header #branding h2 {
+  margin: 0;
+}
+
+/* Floating all the elements inside the nav container towards the right and giving them a top margin of 10
+so they are more in the middle of the nav bar */
+header nav {
+  float: right;
+  margin-top: 10px;
+}
+
+/* making a class called highlight and targeting the current class within the header in the li tag and targetting the anchor tag it
+is located before to give the text an orange color and to make the font bold so the user knows that is the current tab */
+header .highlight,
+header .current a {
+  color: #2b0d0d;
+  font-weight: bold;
+}
+
+/* when the anchor tags are hovered over by the user to notify the user it changes the text color and makes the text bold */
+header a:hover {
+  color: #cccccc;
+  font-weight: bold;
+}
+
+/* Showcase */
+/* Targeting the showcase ID and giving it a responsive height of 400px. calling and setting the background image of the showcase
+have to leave the folder using ../ then calling the folder and calling the file by / and giving it a property of no repeat
+making the background image position itself in the middle. aligning the text in the center of the showcase and giving a white
+color */
+#showcase {
+  min-height: 400px;
+  background: url('../../../img/dublin2.jpg') no-repeat;
+  background-position: 50%;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* targeting the h1 in the showcase ID. Moving the text downwards by making the top margin 100 and bottom 10 and then giving
+the font size 55px */
+#showcase h1 {
+  margin-top: 100px;
+  font-size: 55px;
+  margin-bottom: 10px;
+}
+
+/* targeting the p element in the showcase ID. and giving it a font size of 20px */
+#showcase p {
+  font-size: 20px;
+}
+
+/* newsletter */
+/* targeting the newsletter ID. Giving it a padding of 15px. Setting text color to white. and the background color to match the
+nav bar */
+#newsletter {
+  padding: 15px;
+  color: #2b0d0d;
+  background: #7FB069;
+}
+
+/* making the h1 element in the newsletter ID float to the left */
+#newsletter h2 {
+  float: left;
+}
+
+/* making the form property in the newsletter ID float to the right and spacing it from the top by giving it a margin top of 15px */
+#newsletter form {
+  float: right;
+  margin-top: 15px;
+}
+
+/* targeting the email input type of the form in the newsletter ID giving it a padding of 4. height of 25. and a width of 250*/
+#newsletter input[type='email'] {
+  padding: 4px;
+  height: 25px;
+  width: 250px;
+}
+
+/* boxes */
+/* targetting all the boxes by grabbing the boxes id and giving the space from the newsletter by setting a margin-top of 20px */
+#boxes {
+  margin-top: 20px;
+}
+
+/* Selecting all box classes within the boxes id. making them float to the left instead of stacking on top of each other.
+making the text within the center. giving them a responsive width of 30%, and adding space between them with 10px */
+#boxes .box {
+  float: left;
+  text-align: center;
+  width: 30%;
+  padding: 10px;
+}
+
+/* todo & IT*/
+/* Align everything to the center and give a text color of black */
+.todo {
+  padding: 40px 0;
+  color: #434343;
+  text-align: center;
+}
+
+/* Make everything 1200pc wide auto margins to center all properties, make any content that is clipped hidden with overflow hidden
+and give a top padding of 0 and a right padding of 20 */
+.inner {
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 20px;
+}
+
+/* grab border class make a line with a width of 160px, and height of 5px, make the background color green (not working?)
+give it a margin of 26px and auto */
+.border {
+  width: 160px;
+  height: 5px;
+  background: #7FB069;
+  margin: 26px auto;
+}
+
+/* Keeps the all the containers on the same row and makes sure all the content is wrapped inside the containers */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.row2 {
+  display: flex;
+  flex-wrap: wrap;
+}
+.row3 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* giving the containers a white background and spacing the content from the sides of the middle. giving the containers a little depth
+perception so they look slightly 3dish by adding a shadow. giving them a max width of 300 so they fit proportianlly.
+aliging all the text in the center and giving all the containers space from each other by adding a margin*/
+.things {
+  background: #fff;
+  padding: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  text-align: center;
+  margin: 20px;
+}
+
+/* giving the images a width of 100% so they should adjust to the window size and makes the containers look the same length wise.
+giving all pictures height of 204.75px so all containers are same height wise pictures are a little stretched and 
+still looking for a proper percentage*/
+.things img {
+  width: 100%;
+  height: 204.75px;
+}
+
+/* making the names of the containers slightly bigger and more perdominant so the user knows that is the container */
+.name {
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+/* giving the stars a color and spacing them out between other content */
+.stars {
+  color: #7FB069;
+  margin: 20px;
+}
+
+/* for IT section specifically, making the links more perdominant with their font weight centering them and getting rid of decoration
+to make them look a bit nicer*/
+.application a:link, .application a:visited {
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 700;
+  display: inline-block;
+}
+
+/* Contact US */
+/* setting a background image to cover the entire area and adding some padding to it so it can fill the screen */
+.contact-section {
+  background: url(../../../img/ireland.jpg) no-repeat center;
+  background-size: cover;
+  padding: 40px 0;
+}
+
+/* aligning header to center */
+.contact-section h1 {
+  text-align: center;
+}
+
+/*  */
+.contact-form-text {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 16px 0;
+  border: 0;
+  background: #111;
+  padding: 20px 40px;
+  outline: none;
+  color: #ddd;
+  transition: 0.5s;
+}
+
+.contact-form-text:focus {
+  box-shadow: 0 0 10px 4px #34495e;
+}
+
+textarea.contact-form-text {
+  resize: none;
+  height: 120px;
+}
+
+.contact-form-btn {
+  float: right;
+  border: 0;
+  background: #34495e;
+  color: #fff;
+  padding: 12px 50px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.contact-form-btn:hover {
+  background: #2980b9;
+}
+
+.hidden {
+position:absolute;
+left:-10000px;
+top:auto;
+width:1px;
+height:1px;
+overflow:hidden;
+}
+
+
+/* footer */
+/* targeting the footer. giving it space from the top by padding 20px, making the text color white, making the background
+color orange for irelands flag, and making the text center */
+footer {
+  padding: 20px;
+  color: #ffffff;
+  background-color: #FFAA5A;
+  text-align: center;
+  display: block;
+}
+
+/* Make Icon colors black */
+footer, a {
+  color: black;
+}
+
+/* adjusting elements when browser is at a certain width */
+/* media queries */
+/* when browser is at 768px make all these elements remove floats, make text align to center, and make the width pulse width 100% */
+@media (max-width: 768px) {
+  header #branding,
+  header nav,
+  header nav li,
+  #newsletter h2,
+  #newsletter form,
+  #boxes .box {
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+
+  /* give header space on the bottom */
+  header {
+    padding-bottom: 20px;
+  }
+
+  /* give the h1 element in the showcase ID a top margin of 40px */
+  #showcase h2 {
+    margin-top: 40px;
+  }
+
+  /* make class button inside of newsletter ID a block so it is always on a seperate line and make width 100%*/
+  #newsletter .button {
+    display: block;
+    width: 100%;
+  }
+
+  /* make email input inside newsletter ID match the buttons width and give space in between */
+  #newsletter form input[type='email'] {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .col {
+    flex: 100%;
+    max-width: 80%;
+  }
+
+  @media screen and (max-width: 600px) {
+    .col {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+}

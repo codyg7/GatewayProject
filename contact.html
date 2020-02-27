@@ -1,0 +1,63 @@
+<!-- Contact -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Dublin</title>
+</head>
+
+<body>
+  <!-- Nav Bar Sectioned nested in the header and in div elements to help target it for styling with a class named current
+        to target the current tab that is open -->
+  <header>
+    <div class="container">
+      <div id="branding">
+        <h2><a href="index.html">Dublin</a></h2>
+      </div>
+      <nav>
+        <ul>
+        <li><a href="index.liml">Home</a></li>
+        <li><a href="todo.html">Fun Things To Do!</a></li>
+        <li><a href="it.html">Our IT Scene!</a></li>
+        <li class="current"><a href="contact.html">Contact Us!</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section>
+  <div class="contact-section">
+    <h1>Contact Us</h1>
+
+    <form action="index.html" class="contact-formn" method="POST">
+      <label class="hidden" for="name">Search Terms</label>
+      <input type="text" class="contact-form-text" id="name" placeholder="Please Give Us Your Name" required />
+      <label class="hidden" for="email">Search Terms</label>
+      <input type="email" id="email" class="contact-form-text" placeholder="Please Give Us Your Email" required />
+      <label class="hidden" for="number">Search Terms</label>
+      <input type="text" id="number" class="contact-form-text" placeholder="Please Give Us Your Phone Number" required />
+      <label class="hidden" for="comments">Search Terms</label>
+      <textarea id="comments" class="contact-form-text" placeholder="Let Us Know What You Though!"></textarea>
+      <input type="submit" class="contact-form-btn" value="Send" />
+    </form>
+  </div>
+  </section>
+  
+  
+  <footer>
+        <p>Dublin, Ireland, copyright &copy; 2020</p>
+        <a href="http://www.facebook.com" aria-label="Facebook"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
+        <a href="http://www.twitter.com" aria-label="Twitter"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
+        <a href="http://www.instagram.com" aria-label="Instagram"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
+        <a href="http://www.pinterest.com" aria-label="Pinterest"><i class="fa fa-pinterest fa-lg" aria-hidden="true"></i></a>
+        <a href="http://www.linkedin.com" aria-label="Linkedin"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a>
+      </footer>
+  
+</body>
+
+</html>

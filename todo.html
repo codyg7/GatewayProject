@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--  Things To Do  -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Fun Things To Do!</title>
+</head>
+
+<body>
+  <!-- Nav Bar Sectioned nested in the header and in div elements to help target it for styling with a class named current
+        to target the current tab that is open -->
+  <header>
+    <div class="container">
+      <div id="branding">
+        <h2><a href="index.html">Dublin</a></h2>
+      </div>
+      <nav>
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li class="current"><a href="todo.html">Fun Things To Do!</a></li>
+        <li><a href="it.html">Our IT Scene!</a></li>
+        <li><a href="contact.html">Contact Us!</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section using section element with an ID to help specifically target it for styling and with a div with container
+        class to share properties from other secctions. Hero Image called in CSS -->
+  <section id="showcase">
+    <div class="container">
+      <h1>Dublin</h1>
+      <p>
+        Dublin is bursting with great sights and places for visitors to see
+        and explore.
+      </p>
+    </div>
+  </section>
+
+  <!-- Basic form asking for users email so can send updates in a "newsletter" Nested in a section element
+          to help target for styling and sharing container DIV with other elements -->
+  <section id="newsletter">
+    <div class="container">
+      <h2>Subscribe For Notifications!</h2>
+      <form>
+        <label for="email" class="emailLabel">Subscribe For Notifications!</label>
+        <input id="email" type="email" placeholder="Enter Email" />
+        <button type="submit" class="button_1">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <section>
+  <div class="todo">
+    <div class="inner">
+      <h2>Fun Things To Do!</h2>
+      <div class="border"></div>
+
+      <div class="row">
+        <div class="things">
+          <img src="../../img/stuff1.jpg" alt="Guiness Storehouse">
+          <div class="name">Guinness Storehouse</div>
+          <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>
+            Immersive brand experience & rooftop bar. The Storehouse covers seven floors surrounding a glass atrium shaped in the form of a pint of Guinness.
+          </p>
+        </div>
+        <div class="things">
+          <img src="../../img/stuff2.jpg" alt="Temple Bar">
+          <div class="name">Temple Bar</div>
+          <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>
+            It is promoted as Dublin's 'cultural quarter' and, as a centre of Dublin's city centre's nightlife, is a tourist destination.
+          </p>
+        </div>
+        <div class="things">
+          <img src="../../img/stuff3.jpg" alt="Dublin Castle">
+          <div class="name">Dublin Castle</div>
+          <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>
+            Dublin Castle is a major Irish government complex, conference centre, and tourist attraction. Until 1922 it was the seat of the British government's administration in Ireland.
+          </p>
+        </div>
+
+        <div class="row2">
+          <div class="things">
+            <img src="../../img/stuff4.jpg" alt="Phoenix Park">
+            <div class="name">Phoenix Park</div>
+            <div class="stars">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half-o"></i>
+            </div>
+            <p>
+              Phoenix Park is an urban park in Dublin, it is one of the largest enclosed recreational spaces within any European capital city.
+            </p>
+          </div>
+          <div class="things">
+            <img src="../../img/stuff5.jpg" alt="Kilmainham Gaol">
+            <div class="name">Kilmainham Gaol</div>
+            <div class="stars">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half-o"></i>
+            </div>
+            <p>
+              Kilmainham Gaol is a former prison in Kilmainham, Dublin, Ireland. It is now a museum run by the Office of Public Works, an agency of the Government of Ireland.
+            </p>
+          </div>
+          <div class="things">
+            <img src="../../img/stuff6.jpg" alt="St Stephen Green">
+            <div class="name">St Stephen Green</div>
+            <div class="stars">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <p>
+              St Stephen's Green is a city centre public park in Dublin, Ireland. Has a victorian layout. The park is adjacent to one of Dublin's main shopping streets, Grafton Street, and to a shopping centre named for it, while on its surrounding streets are the offices of a number of public bodies. 
+            </p>
+          </div>
+          <div class="row3">
+            <div class="things">
+              <img src="../../img/stuff7.jpg" alt="Christ Church Cathedral">
+              <div class="name">Christ Church Cathedral</div>
+              <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+              </div>
+              <p>
+                Christ Church Cathedral, more formally The Cathedral of the Holy Trinity, is the cathedral of the United Dioceses of Dublin and Glendalough and the cathedral of the ecclesiastical province of the United Provinces of Dublin and Cashel in the Church of Ireland.
+              </p>
+            </div>
+            <div class="things">
+              <img src="../../img/stuff8.jpg" alt="Jameson Distillery Bow">
+              <div class="name">Jameson Distillery Bow</div>
+              <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+              </div>
+              <p>
+                Jameson Distillery Bow St. is an Irish whiskey tourist attraction located just off Smithfield Square in Dublin, Ireland. Jameson Distillery Bow St. is the original site where Jameson Irish Whiskey was distilled until 1971. It is now a visitors centre that provides guided tours, tutored whiskey tastings, JJs bar and a gift shop.
+              </p>
+            </div>
+            <div class="things">
+              <img src="../../img/download.jpeg" alt="Dublin Zoo">
+              <div class="name">Dublin Zoo</div>
+              <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+              </div>
+              <p>
+                Dublin Zoo, in Phoenix Park, and is one of Dublin's most popular attractions. The zoo describes its role as conservation, study, and education. Its stated mission is to "work in partnership with zoos worldwide to make a significant contribution to the conservation of the endangered species on Earth".
+              </p>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+  </div>
+  </section>
+
+      <footer>
+        <p>Dublin, Ireland, copyright &copy; 2020</p>
+        <a href="http://www.facebook.com" aria-label="Facebook"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
+        <a href="http://www.twitter.com" aria-label="Twitter"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
+        <a href="http://www.instagram.com" aria-label="Instagram"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
+        <a href="http://www.pinterest.com" aria-label="Pinterest"><i class="fa fa-pinterest fa-lg" aria-hidden="true"></i></a>
+        <a href="http://www.linkedin.com" aria-label="Linkedin"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a>
+      </footer>
+</body>
+
+</html>

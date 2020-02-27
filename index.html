@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Index -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="description" content="Experience Dublin the right way">
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Dublin</title>
+</head>
+
+<body>
+  <!-- Nav Bar Sectioned nested in the header and in div elements to help target it for styling with a class named current
+        to target the current tab that is open -->
+  <header>
+    <div class="container">
+      <div id="branding">
+        <h2><a href="index.html">Dublin</a></h2>
+      </div>
+      <nav>
+        <ul>
+        <li class="current"><a href="index.html">Home</a></li>
+        <li><a href="todo.html">Fun Things To Do!</a></li>
+        <li><a href="it.html">Our IT Scene!</a></li>
+        <li><a href="contact.html">Contact Us!</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section using section element with an ID to help specifically target it for styling and with a div with container
+        class to share properties from other secctions. Hero Image called in CSS -->
+  <section id="showcase">
+    <div class="container">
+      <h1>Dublin</h1>
+      <p>
+        Dublin is bursting with great sights and places for visitors to see
+        and explore.
+      </p>
+    </div>
+  </section>
+
+  <!-- Basic form asking for users email so can send updates in a "newsletter" Nested in a section element
+          to help target for styling and sharing container DIV with other elements -->
+  <section id="newsletter">
+    <div class="container">
+      <h2>Subscribe For Notifications!</h2>
+      <form>
+        <label class="hidden" for="email">Search Terms</label>
+        <input id="email" type="email" placeholder="Enter Email" />
+        <button type="submit" class="button_1">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Pages content advertising some highlights in dublin. using section with an ID of boxes to help target everything
+          within it specifically. Sharing Div with class Container. Each one is starting with a box DIV to specifically style
+        the boxes. Has a Icon element from fontawesome. -->
+  <section id="boxes">
+    <div class="container">
+      <div class="box">
+        <i class="fa fa-leaf fa-3x" aria-hidden="true"></i>
+        <h3>Beautiful Scenery & architecture</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+          reprehenderit omnis modi exercitationem est eius rerum, molestias
+          maxime? Consequatur, enim?
+        </p>
+      </div>
+      <div class="box">
+        <i class="fa fa-beer fa-3x" aria-hidden="true"></i>
+        <h3>Home to top crafted Beer and Whiskey</h3>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime ab
+          dignissimos similique tenetur excepturi ut quidem exercitationem
+          nemo commodi mollitia.
+        </p>
+      </div>
+      <div class="box">
+        <i class="fa fa-laptop fa-3x" aria-hidden="true"></i>
+
+        <h3>Competitive Technology Companies</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+          enim quae fuga! Mollitia obcaecati autem quia nesciunt ut quidem
+          necessitatibus.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer with copyright logo, and fontawesome Icons that are linked towards their multimedia webpages -->
+  <footer>
+        <p>Dublin, Ireland, copyright &copy; 2020</p>
+        <a href="http://www.facebook.com" aria-label="Facebook"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
+        <a href="http://www.twitter.com" aria-label="Twitter"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
+        <a href="http://www.instagram.com" aria-label="Instagram"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
+        <a href="http://www.pinterest.com" aria-label="Pinterest"><i class="fa fa-pinterest fa-lg" aria-hidden="true"></i></a>
+        <a href="http://www.linkedin.com" aria-label="Linkedin"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a>
+      </footer>
+
+</body>
+
+</html>
